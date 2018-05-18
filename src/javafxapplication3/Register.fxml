@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #DADFE1;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication3.RegisterController">
+   <effect>
+      <InnerShadow />
+   </effect>
+   <children>
+      <Label layoutX="224.0" layoutY="50.0" opacity="0.85" prefHeight="54.0" prefWidth="127.0" text="REGISTER" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Label>
+      <TextField fx:id="firstname" layoutX="52.0" layoutY="151.0" promptText="First name" />
+      <TextField fx:id="lastname" layoutX="52.0" layoutY="188.0" promptText="Last name" />
+      <TextField fx:id="course" layoutX="52.0" layoutY="220.0" promptText="Course/Program" />
+      <TextField fx:id="school" layoutX="52.0" layoutY="253.0" promptText="Name of School" />
+      <TextField fx:id="ojt" layoutX="52.0" layoutY="287.0" promptText="OJT hourse" />
+      <TextField fx:id="number" layoutX="52.0" layoutY="325.0" promptText="Contact number" />
+      <TextField fx:id="username" layoutX="373.0" layoutY="164.0" promptText="Prefered Username" />
+      <TextField fx:id="password" layoutX="373.0" layoutY="201.0" promptText="Prefered Password" />
+      <Button layoutX="364.0" layoutY="245.0" mnemonicParsing="false" onAction="#submit_Button" prefHeight="54.0" prefWidth="166.0" text="SUBMIT" />
+      <Hyperlink layoutX="40.0" layoutY="27.0" onAction="#back_button" text="Back to preview" textFill="#280a0a" />
+      <BorderPane layoutX="22.0" layoutY="23.0">
+         <center>
+            <ImageView fitHeight="30.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+               <image>
+                  <Image url="@../IMAGE/Expand%20Arrow_64px.png" />
+               </image>
+            </ImageView>
+         </center>
+      </BorderPane>
+      <Label layoutX="147.0" layoutY="96.0" prefHeight="17.0" prefWidth="308.0" text="*Please fill up all the information inside the box." />
+      <Label fx:id="label_firstname" layoutX="209.0" layoutY="155.0" prefHeight="25.0" prefWidth="30.0" textFill="#ee0707">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_lastname" layoutX="209.0" layoutY="189.0" prefHeight="25.0" prefWidth="30.0" textFill="#ee0707">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_course" layoutX="209.0" layoutY="220.0" prefHeight="25.0" prefWidth="30.0" textFill="#ee0707">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_school" layoutX="209.0" layoutY="253.0" prefHeight="25.0" prefWidth="30.0" textFill="#ee0707">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_ojt" layoutX="209.0" layoutY="287.0" prefHeight="25.0" prefWidth="30.0" textFill="#ee0707">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_number" layoutX="209.0" layoutY="325.0" prefHeight="25.0" prefWidth="30.0" textFill="#ee0707">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_username" layoutX="530.0" layoutY="168.0" prefHeight="25.0" prefWidth="30.0" textFill="#ee0707">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_password" layoutX="530.0" layoutY="199.0" prefHeight="25.0" prefWidth="30.0" textFill="#ee0707">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_error" layoutX="52.0" layoutY="125.0" prefHeight="17.0" prefWidth="247.0" textFill="#ff0808" />
+      <ImageView fitHeight="45.0" fitWidth="79.0" layoutX="254.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../IMAGE/if_Edit-Male-User_49585.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

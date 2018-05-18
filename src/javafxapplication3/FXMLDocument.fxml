@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="357.0" prefWidth="503.0" style="-fx-background-color: #DADFE1;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication3.FXMLDocumentController">
+   <children>
+      <ImageView fitHeight="350.0" fitWidth="596.0" layoutY="7.0" opacity="0.16" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../IMAGE/dict-logo.jpg" />
+         </image>
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </ImageView>
+      <TextField layoutX="54.0" layoutY="163.0" prefHeight="32.0" prefWidth="179.0" promptText="Username" />
+      <TextField layoutX="54.0" layoutY="200.0" prefHeight="32.0" prefWidth="179.0" promptText="Password" />
+      <Button fx:id="signin" layoutX="54.0" layoutY="240.0" mnemonicParsing="false" onAction="#Sign_in" prefHeight="32.0" prefWidth="179.0" text="SIGN IN">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Hyperlink layoutX="247.0" layoutY="245.0" onAction="#forget_Pass" text="Forgot Password?" textAlignment="CENTER" textFill="#1b1919" underline="true" />
+      <Label layoutX="367.0" layoutY="14.0" prefHeight="17.0" prefWidth="108.0" text="Not yet registered? " />
+      <Hyperlink fx:id="hyperlink" layoutX="469.0" layoutY="11.0" onAction="#Hyperlink_button" text="Please click here" textFill="#726161" underline="true" />
+      <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="212.0" layoutY="171.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../IMAGE/if_Login_73221.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="23.0" fitWidth="28.0" layoutX="209.0" layoutY="205.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../IMAGE/if_preferences-desktop-cryptography_8794.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="label" layoutX="66.0" layoutY="280.0" prefHeight="17.0" prefWidth="179.0" textFill="#eb0000" />
+      <Label layoutX="92.0" layoutY="120.0" opacity="0.74" prefHeight="32.0" prefWidth="128.0" text="USER LOGIN">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Label>
+      <ImageView fitHeight="67.0" fitWidth="73.0" layoutX="114.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../IMAGE/if_user-group_285648.png" />
+         </image>
+      </ImageView>
+   </children>
+   <effect>
+      <InnerShadow />
+   </effect>
+</AnchorPane>

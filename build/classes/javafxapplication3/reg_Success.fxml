@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication3.Reg_SuccessController">
+   <children>
+      <Label layoutX="177.0" layoutY="127.0" prefHeight="17.0" prefWidth="278.0" text="Congratulation you have created your account!" />
+      <Button layoutX="243.0" layoutY="188.0" mnemonicParsing="false" onAction="#proceed_login" prefHeight="25.0" prefWidth="114.0" text="Proceed" />
+      <Label layoutX="219.0" layoutY="155.0" prefHeight="17.0" prefWidth="162.0" text="Please click proceed to log in." />
+   </children>
+   <effect>
+      <InnerShadow />
+   </effect>
+</AnchorPane>
